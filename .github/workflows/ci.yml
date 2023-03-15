@@ -12,6 +12,9 @@ jobs:
           npm -v
           yarn -v
 
+      - name: Print user
+        run: id
+
       - name: Checkout 🛎
         uses: actions/checkout@v3
 
