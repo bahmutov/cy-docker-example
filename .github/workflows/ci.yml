@@ -17,7 +17,7 @@ jobs:
 
       - name: chown workspace
         run: |
-          sudo chown -R $(whoami):$(whoami) $GITHUB_WORKSPACE
+          chown -R $(whoami):$(whoami) $GITHUB_WORKSPACE
 
       - name: Checkout 🛎
         uses: actions/checkout@v3
