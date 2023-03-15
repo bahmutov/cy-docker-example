@@ -17,6 +17,8 @@ jobs:
 
       - name: Checkout 🛎
         uses: actions/checkout@v3
+        with:
+          set-safe-directory: false
 
       - name: Cypress tests 🧪
         uses: cypress-io/github-action@v5
