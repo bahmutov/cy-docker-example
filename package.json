@@ -1,16 +1,17 @@
 {
   "name": "cy-docker-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Running Cypress using GitHub Actions and a Docker image",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gleb Bahmutov",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.8.0",
+    "cypress": "^12.7.0",
     "prettier": "^2.8.4"
   }
 }
