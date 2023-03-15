@@ -1,0 +1,19 @@
+name: ci
+on: [push]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node18.12.0-chrome107
+    steps:
+      - name: Print versions 🖨️
+        run: |
+          node -v
+          npm -v
+          yarn -v
+
+      - name: Checkout 🛎
+        uses: actions/checkout@v3
+
+      - name: Cypress tests 🧪
+        uses: cypress-io/github-action@v5
